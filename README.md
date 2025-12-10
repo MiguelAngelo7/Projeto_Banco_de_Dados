@@ -9,6 +9,7 @@ Sistema desenvolvido em PHP com MySQL para autenticação de usuários e gerenci
 # 📂 Estrutura do Projeto
 
 ```
+├── painel.php
 ├── cadastro.php
 ├── conexao.php
 ├── dados.php
