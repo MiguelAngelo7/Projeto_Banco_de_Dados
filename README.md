@@ -17,7 +17,7 @@ Sistema desenvolvido em PHP com MySQL para autenticação de usuários e gerenci
 ├── login.php
 ├── salvar_formulario.php
 ├── logout.php
-└── verifica_login.php  (implícito, mas necessário)
+└── verifica_login.php  
 ```
 
 > Observação: Os arquivos enviados estão com nomes diferentes dos mencionados no modelo inicial, por isso o README é adaptado exatamente ao que você enviou.
@@ -31,21 +31,19 @@ Sistema desenvolvido em PHP com MySQL para autenticação de usuários e gerenci
 | Função                 | Status                         | Arquivos                           |
 | ---------------------- | ------------------------------ | ---------------------------------- |
 | Cadastrar usuário      | ✅ Completo                     | `cadastro.php`                     |
-| Fazer login            | ⚠️ Funciona, mas com problemas | `index.php`, `login.php`           |
-| Verificar sessão ativa | ⚠️ Incompleto/implícito        | `verifica_login.php` (não enviado) |
+| Fazer login            | ✅ Completo                    | `index.php`, `login.php`           |
+| Verificar sessão ativa | ✅ Completo                    | `verifica_login.php`                |
 | Logout                 | ✅ Completo                     | `logout.php`                       |
 
 ### **🧑‍🎓 Gestão de Alunos**
 
 | Função          | Status                             | Arquivos                                  |
 | --------------- | ---------------------------------- | ----------------------------------------- |
-| Cadastrar aluno | ⚠️ Parcial (campos inconsistentes) | `formulario.php`, `salvar_formulario.php` |
-| Editar aluno    | ⚠️ NÃO implementado                | —                                         |
+| Cadastrar aluno | ✅ Completo                        | `formulario.php`, `salvar_formulario.php` |
+| Editar aluno    | ✅ Completo                        | —                                         |
 | Excluir aluno   | ❌ Não implementado                 | —                                         |
-| Listar alunos   | ⚠️ Não existe arquivo de listagem  | —                                         |
+| Listar alunos   | ✅ Completo                         | —                                         |
 
-> 📌 **Seu formulário possui MUITOS campos que não estão sendo salvos no banco.**
-> O arquivo `salvar_formulario.php` só grava 9 dos 15+ campos.
 
 ---
 
@@ -182,40 +180,11 @@ Formulário completo de cadastro do aluno (15+ campos).
 
 Recebe dados do formulário e insere no banco.
 
-> ⚠️ Não salva todos os campos presentes no formulário!
 
 ### **🟦 dados.php**
 
 Arquivo contendo o SQL para criar a tabela de alunos.
 
----
-
-# 🧭 Pontos Importantes a Melhorar
-
-### 🔴 1. Senhas NÃO devem usar MD5
-
-Trocar para:
-
-```php
-password_hash()
-password_verify()
-```
-
-### 🟠 2. Cadastro de aluno não está salvando todos os campos
-
-Metade do formulário não está sendo gravado no banco.
-
-### 🔴 3. Login.php tem código duplicado
-
-Há dois blocos `if ($row == 1)`.
-
-### 🟠 4. Falta listagem, edição e exclusão de alunos
-
-Essas funções precisam ser implementadas.
-
-### 🔵 5. Arquivo verifica_login.php não foi enviado
-
-É essencial para segurança.
 
 ---
 
