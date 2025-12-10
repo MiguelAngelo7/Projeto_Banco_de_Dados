@@ -19,7 +19,9 @@ Sistema desenvolvido em PHP com MySQL para autenticação de usuários e gerenci
 ├── salvar_formulario.php
 ├── logout.php
 |── verifica_login.php
-├── list.php 
+├── list.php
+├── navbar.php
+├── telacadastro.php
 ```
 
 > Observação: Os arquivos enviados estão com nomes diferentes dos mencionados no modelo inicial, por isso o README é adaptado exatamente ao que você enviou.
